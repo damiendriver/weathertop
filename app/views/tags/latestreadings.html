@@ -1,0 +1,46 @@
+#{list items:_station, as:'station'}
+<div class="ui five inverted cards">
+    <div class="ui card">
+        <div class="extra contentContainer">
+            <h3 class="ui inverted big white header">${station.name} <i class="map marker inverted grey icon"></i></h3>
+            <p class="header">Lat: ${station.latitude}</p>
+            <p class="header">Lng: ${station.longitude}</p>
+        </div>
+    </div>
+    <div class="ui card">
+        <div class="extra contentContainer">
+            <h3 class="ui inverted big white header">Weather <i class="cloud moon rain inverted orange icon"></i></h3>
+            <p class="header">${station.weatherDescription}</p>
+        </div>
+    </div>
+    <div class="ui card">
+        <div class="extra contentContainer">
+            <h3 class="ui inverted big white header">Temp <i class="temperature high inverted red icon"></i></h3>
+            <p class="header">${station.tempCelsius} C</p>
+            <p class="header">${station.tempFahrenheit} F</p>
+            <p class="header">Max: ${station.maxTempCelsius} C</p>
+            <p class="header">Min: ${station.minTempCelsius} C</p>
+        </div>
+    </div>
+    <div class="ui card">
+        <div class="extra contentContainer">
+            <h3 class="ui inverted big white header">Wind <i class="wind inverted blue icon"></i></h3>
+            <p class="header">${station.windBeaufort} Bft</p>
+            <p class="header">${station.windDirectionOutput}</p>
+            <p class="header">Feels like: </p>
+            <p class="header">${station.windChill} C</p>
+            <p class="header">Max: ${station.maxWindSpeed}</p>
+            <p class="header">Min: ${station.minWindSpeed}</p>
+
+        </div>
+    </div>
+    <div class="ui card">
+        <div class="extra contentContainer">
+            <h3 class="ui inverted big white header">Pressure <i class="sun outline inverted green icon"></i></h3>
+            <p class="header">${station.pressureHPA} hPa</p>
+            <p class="header">Max: ${station.maxPressure}</p>
+            <p class="header">Min: ${station.minPressure}</p>
+        </div>
+    </div>
+</div>
+#{/list}
