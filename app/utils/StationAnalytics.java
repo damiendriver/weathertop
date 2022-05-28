@@ -2,6 +2,7 @@ package utils;
 import models.Reading;
 import models.Station;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class StationAnalytics {
@@ -27,6 +28,30 @@ public class StationAnalytics {
                 return "Check Code Entered for Latest Reading as Invalid Code Input";
         }
     }
+
+    public static String weatherSuitableIcon(int code) {
+        switch(code) {
+            case 100:
+                return "ui inverted yellow sun outline icon";
+            case 200:
+                return "ui yellow cloud sun icon";
+            case 300:
+                return "ui grey cloud icon";
+            case 400:
+                return "ui inverted primary cloud sun rain icon";
+            case 500:
+                return "blue cloud showers heavy icon";
+            case 600:
+                return "blue cloud rain icon";
+            case 700:
+                return "ui inverted white snowflake outline icon";
+            case 800:
+                return "ui red bolt icon";
+            default:
+                return "Check weather Code, Invalid Entry";
+        }
+    }
+
     public static double tempToFahrenheit(double temperature) {
         double tempFahrenheit = (((temperature * 9) / 5) +32);
         tempFahrenheit = (Math.round(tempFahrenheit * 10.0) / 10.0);

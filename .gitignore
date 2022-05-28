@@ -2,9 +2,11 @@
 eclipse
 documentation
 tmp
+.class
 .classpath
 .project
 .idea
 *.iml
 *.ipr
 *.iws
+*.class

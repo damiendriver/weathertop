@@ -1,5 +1,5 @@
 #{list items:_station, as:'station'}
-<div class="ui five inverted cards">
+<div class="ui five inverted cards" xmlns="http://www.w3.org/1999/html">
     <div class="ui card">
         <div class="extra contentContainer">
             <h3 class="ui inverted big white header">${station.name} <i class="map marker inverted grey icon"></i></h3>
@@ -9,7 +9,7 @@
     </div>
     <div class="ui card">
         <div class="extra contentContainer">
-            <h3 class="ui inverted big white header">Weather <i class="cloud moon rain inverted orange icon"></i></h3>
+            <h3 class="ui inverted big white header">Weather <i class="${station.suitableIcon}"></i></h3>
             <p class="header">${station.weatherDescription}</p>
         </div>
     </div>

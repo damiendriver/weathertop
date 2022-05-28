@@ -15,6 +15,7 @@ public class LatestWeather {
             reading = new Reading(0, 0.0, 0.0, 0, 0);
         }
         station.weatherDescription = StationAnalytics.weatherCodeToString(reading.code);
+        station.suitableIcon = StationAnalytics.weatherSuitableIcon(reading.code);
         station.tempCelsius = reading.temperature;
         station.tempFahrenheit = StationAnalytics.tempToFahrenheit(reading.temperature);
         station.maxTempCelsius = StationAnalytics.getMaxTempCelsius(station);
