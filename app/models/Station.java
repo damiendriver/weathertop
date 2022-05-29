@@ -25,7 +25,7 @@ public class Station extends Model
   public double maxTempCelsius;
   public double minTempCelsius;
   public double tempFahrenheit;
-  public int windBeaufort;
+  public String windBeaufort;
   public String windDirectionOutput;
   public double windChill;
   public double maxWindSpeed;

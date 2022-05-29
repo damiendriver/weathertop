@@ -65,43 +65,43 @@ public class StationAnalytics {
         return windChill;
     }
 
-    public static int windToBeaufort(double windSpeed) {
-        int windBeaufort;
+    public static String windToBeaufort(double windSpeed) {
+        String windBeaufort;
         if (windSpeed <= 1) {
-            windBeaufort = 0;
+            windBeaufort = "Calm";
         }
         else if ((windSpeed > 1) && (windSpeed < 6)) {
-            windBeaufort = 1;
+            windBeaufort = "Light air";
         }
         else if ((windSpeed >= 6) && (windSpeed < 12)) {
-            windBeaufort = 2;
+            windBeaufort = "Light Breeze";
         }
         else if ((windSpeed >= 12) && (windSpeed < 20)) {
-            windBeaufort = 3;
+            windBeaufort = "Gentle Breeze";
         }
         else if ((windSpeed >= 20) && (windSpeed < 29)) {
-            windBeaufort = 4;
+            windBeaufort = "moderate Breeze";
         }
         else if ((windSpeed >= 29) && (windSpeed < 39)) {
-            windBeaufort = 5;
+            windBeaufort = "Fresh Breeze";
         }
         else if ((windSpeed >= 39) && (windSpeed < 50)) {
-            windBeaufort = 6;
+            windBeaufort = "Strong Breeze";
         }
         else if ((windSpeed >= 50) && (windSpeed < 62)) {
-            windBeaufort = 7;
+            windBeaufort = "Near Gale";
         }
         else if ((windSpeed >= 62) && (windSpeed < 75)) {
-            windBeaufort = 8;
+            windBeaufort = "Gale";
         }
         else if ((windSpeed >= 75) && (windSpeed < 89)) {
-            windBeaufort = 9;
+            windBeaufort = "Severe Gale";
         }
         else if ((windSpeed >= 89) && (windSpeed < 103)) {
-            windBeaufort = 10;
+            windBeaufort = "Storm Storm";
         }
         else {
-            windBeaufort = 11;
+            windBeaufort = "Violent Storm";
         }
 
         return windBeaufort;

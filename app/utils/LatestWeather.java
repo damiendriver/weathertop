@@ -20,7 +20,7 @@ public class LatestWeather {
         station.tempFahrenheit = StationAnalytics.tempToFahrenheit(reading.temperature);
         station.maxTempCelsius = StationAnalytics.getMaxTempCelsius(station);
         station.minTempCelsius = StationAnalytics.getMinTempCelsius(station);
-        station.windBeaufort = StationAnalytics.windToBeaufort(reading.windSpeed);
+        station.windBeaufort = String.valueOf(StationAnalytics.windToBeaufort(reading.windSpeed));
         station.windDirection = reading.windDirection;
         station.windDirectionOutput = StationAnalytics.windDirectionToString(reading.windDirection);
         station.windChill = StationAnalytics.windChillCalculator(reading.windSpeed, reading.temperature);
