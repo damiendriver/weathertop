@@ -8,7 +8,7 @@ GitHub URL: https://github.com/damiendriver/weathertop.git
 
 Deployed URL: http://warm-reef-28554.herokuapp.com/
 
-YouTube Video: 
+YouTube Video: https://youtu.be/Kdeym0lv4c8
 
 Description:
 
